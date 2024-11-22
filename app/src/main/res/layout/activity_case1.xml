@@ -26,11 +26,14 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="@string/demo_product_name"
-            android:textSize="60px"
+            android:textSize="60sp"
             android:layout_weight="1"/>
 
         <ImageButton
             android:id="@+id/removeButton"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
+            android:contentDescription="@string/removeAProduct"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/ic_remove"
@@ -41,13 +44,15 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             tools:text="0"
-            android:textSize="60px"
+            android:textSize="60sp"
             android:layout_margin="20dp"
-            android:textColor="@color/gray400"/>
+            android:textColor="@color/black"/>
 
         <ImageButton
             android:id="@+id/addButton"
-
+            android:contentDescription="@string/addAProduct"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/ic_add"
