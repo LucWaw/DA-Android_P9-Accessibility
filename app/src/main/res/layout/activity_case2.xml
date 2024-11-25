@@ -19,6 +19,7 @@
         android:id="@+id/recipeCard"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:importantForAccessibility="yes"
         android:layout_margin="16dp">
         <androidx.constraintlayout.widget.ConstraintLayout
             android:padding="4dp"
@@ -29,7 +30,7 @@
                 android:id="@+id/productImage"
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
-                android:src="@drawable/cookie_amirali_mirhashemian_unsplash"
+                android:src="@drawable/cookie"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
@@ -41,6 +42,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@drawable/ic_favourite_off"
+                android:importantForAccessibility="no"
                 android:backgroundTint="#99FFFFFF"
                 app:layout_constraintTop_toTopOf="@id/productImage"
                 app:layout_constraintEnd_toEndOf="@id/productImage"
@@ -66,6 +68,7 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="8dp"
                     android:text="@string/ajouter"
+                    android:importantForAccessibility="no"
                     android:drawableEnd="@drawable/ic_add"
                     android:drawableTint="@color/white"
                     app:layout_constraintTop_toBottomOf="@id/productTitle"

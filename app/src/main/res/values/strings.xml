@@ -16,5 +16,8 @@
     <string name="demo_product_name">Nom du produit</string>
     <string name="addAProduct">Ajouter un produit</string>
     <string name="removeAProduct">Retirer un produit</string>
+    <string name="accessibility_action_recipe_card">Cookies au chocolat, favori et ajout dans le panier possible</string>
+    <string name="remove_from_favourites">Retirer des favoris</string>
+    <string name="add_to_favourites">Ajouter aux favoris</string>
 
 </resources>
