@@ -23,7 +23,7 @@ class Case2Activity : AppCompatActivity() {
         binding.favouriteButton.setOnClickListener {
             isFavourite = !isFavourite
             setFavouriteButtonIcon(isFavourite)
-            updateAccessibilityAction(isFavourite) // Mettre à jour l'accessibilité
+            updateAccessibilityAction(isFavourite) // Update the accessibility action
 
         }
 
@@ -66,12 +66,12 @@ class Case2Activity : AppCompatActivity() {
     private var accessibilityActionId: Int = View.NO_ID
 
     fun updateAccessibilityAction(isFavourite: Boolean) {
-        // Supprime l'action précédente si elle existe
+        // Suppress the previous action if it exists
         if (accessibilityActionId != View.NO_ID) {
             ViewCompat.removeAccessibilityAction(binding.recipeCard, accessibilityActionId)
         }
 
-        // Ajoute une nouvelle action avec un label adapté
+        // Add the new action
         accessibilityActionId = ViewCompat.addAccessibilityAction(
             binding.recipeCard,
             if (isFavourite) getString(R.string.remove_from_favourites) else getString(R.string.add_to_favourites)
